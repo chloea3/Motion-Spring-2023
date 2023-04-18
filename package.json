@@ -7,5 +7,8 @@
   "license": "UNLICENSED",
   "repository": {},
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "gsap": "^3.11.5",
+    "jquery": "^3.6.4"
+  }
 }
