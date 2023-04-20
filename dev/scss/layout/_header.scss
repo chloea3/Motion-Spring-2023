@@ -12,12 +12,12 @@ header{
         display: grid;
         grid-template-columns: 20% auto;
         padding: 8px 16px;
+        align-items: center;
 
         aside{
             a{
-                display:inline-block;
+                display: inline-block;
             }
         }
     }
-
 }
