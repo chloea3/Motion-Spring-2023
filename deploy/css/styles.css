@@ -365,6 +365,7 @@ nav ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  list-style: none;
 }
 nav ul li {
   margin-left: 4vw;
@@ -375,6 +376,7 @@ nav ul li a:link, nav ul li a:visited {
   transition: 0.25s;
   font-size: 1.125rem;
   font-weight: 300;
+  text-decoration: none;
 }
 nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav ul li a:visited:active {
   color: rgb(255, 255, 255);

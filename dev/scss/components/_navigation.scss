@@ -9,6 +9,7 @@ nav{
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        list-style: none;
 
         li{
             margin-left: 4vw;
@@ -20,6 +21,7 @@ nav{
                 transition: 0.25s;
                 font-size: rem-calc(18);
                 font-weight: 300;
+                text-decoration: none;
 
                 &:hover, &:active{
                     color: rgb(255, 255, 255);
