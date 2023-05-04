@@ -4,13 +4,40 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../img/hero.jpg");
+    background-image: url("../img/image.jpg");
     background-size: cover;
 
-    #box{
-        height: 100px;
-        width: 100px;
-        background-color: var(--red);
-        border: 3px solid var(--white);
-    }
+    .circle {
+        position: relative;
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+      }
+      
+      .circle {
+        position: relative;
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+      }
+      
+      #pink {
+        background-color: rgb(255, 40, 165);
+        left: 20px;
+      }
+      
+      #aqua {
+        background-color: aqua;
+        left: -15px;
+      }
+      
+      #purple {
+        background-color: rgb(95, 0, 168);
+        left: 60px;
+      }
+      
+      
+      
 }

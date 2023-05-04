@@ -4,4 +4,77 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-image: url("../img/green.jpg");
+    background-size: cover;
+
+
+	#octagon-stack {
+  width: 200px;
+  height: 600px;
+  position: relative;
+}
+
+#octagon1, #octagon2, #octagon3 {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#octagon1 {
+  background-color: #32ff39; /* Green shade 1 */
+  
+}
+
+#octagon2 {
+  background-color: #8bd849; /* Green shade 2 */
+  transform: translateY(200px);
+}
+
+#octagon3 {
+  background-color: #00ffa6; /* Green shade 3 */
+  transform: translateY(400px);
+}
+
+/* Styling for the octagon shape */
+#octagon1::before, #octagon1::after,
+#octagon2::before, #octagon2::after,
+#octagon3::before, #octagon3::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: inherit;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%);
+}
+
+#octagon1::before {
+  left: 0;
+}
+
+#octagon1::after {
+  right: 0;
+}
+
+#octagon2::before {
+  top: 0;
+  left: 0;
+}
+
+#octagon2::after {
+  bottom: 0;
+  right: 0;
+}
+
+#octagon3::before {
+  top: 0;
+  right: 0;
+}
+
+#octagon3::after {
+  bottom: 0;
+  left: 0;
+}
+
 }

@@ -17,6 +17,8 @@ html {
   --aqua: #2ee6ef;
   --yellow: #efe22e;
   --red: #ef4b2e;
+  --pink: #ff00bb;
+  --purple: #8800ff;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -369,11 +371,49 @@ textarea {
     Footer
 ============= */
 #section-1 {
-  background-color: var(--aqua);
+  background-color: var(--light rgb(255, 255, 255));
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("../img/star.jpg");
+  background-size: cover;
+}
+#section-1 #stars {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+#section-1 .star {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 90);
+  box-sizing: border-box;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+#section-1 #star1 {
+  top: 0;
+  left: 0;
+}
+#section-1 #star2 {
+  top: 120px;
+  left: 120px;
+}
+#section-1 #star3 {
+  top: 240px;
+  left: 240px;
+}
+#section-1 #star4 {
+  top: 360px;
+  left: 360px;
+}
+#section-1 #star5 {
+  top: 480px;
+  left: 480px;
 }
 
 #section-2 {
@@ -382,14 +422,34 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/hero.jpg");
+  background-image: url("../img/image.jpg");
   background-size: cover;
 }
-#section-2 #box {
-  height: 100px;
-  width: 100px;
-  background-color: var(--red);
-  border: 3px solid var(--white);
+#section-2 .circle {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+#section-2 .circle {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+#section-2 #pink {
+  background-color: rgb(255, 40, 165);
+  left: 20px;
+}
+#section-2 #aqua {
+  background-color: aqua;
+  left: -15px;
+}
+#section-2 #purple {
+  background-color: rgb(95, 0, 168);
+  left: 60px;
 }
 
 #section-3 {
@@ -398,4 +458,62 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("../img/green.jpg");
+  background-size: cover;
+  /* Styling for the octagon shape */
+}
+#section-3 #octagon-stack {
+  width: 200px;
+  height: 600px;
+  position: relative;
+}
+#section-3 #octagon1, #section-3 #octagon2, #section-3 #octagon3 {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#section-3 #octagon1 {
+  background-color: #32ff39; /* Green shade 1 */
+}
+#section-3 #octagon2 {
+  background-color: #8bd849; /* Green shade 2 */
+  transform: translateY(200px);
+}
+#section-3 #octagon3 {
+  background-color: #00ffa6; /* Green shade 3 */
+  transform: translateY(400px);
+}
+#section-3 #octagon1::before, #section-3 #octagon1::after,
+#section-3 #octagon2::before, #section-3 #octagon2::after,
+#section-3 #octagon3::before, #section-3 #octagon3::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: inherit;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%);
+}
+#section-3 #octagon1::before {
+  left: 0;
+}
+#section-3 #octagon1::after {
+  right: 0;
+}
+#section-3 #octagon2::before {
+  top: 0;
+  left: 0;
+}
+#section-3 #octagon2::after {
+  bottom: 0;
+  right: 0;
+}
+#section-3 #octagon3::before {
+  top: 0;
+  right: 0;
+}
+#section-3 #octagon3::after {
+  bottom: 0;
+  left: 0;
 }
