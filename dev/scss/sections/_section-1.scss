@@ -7,48 +7,52 @@
     background-image: url("../img/star.jpg");
     background-size: cover;
     
-    #stars {
-        display: flex;
-        flex-wrap: wrap;
-        width: 500px;
-        height: 500px;
-        position: relative;
-      }
+  
+    
+    .stars {
+      display: flex;
+      flex-wrap: wrap;
+      width: 500px;
+      height: 500px;
+      position: relative;
+      margin: 0 auto;
+    }
+    
+    .star {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: rgb(255, 255, 90);
+      box-sizing: border-box;
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
       
-      .star {
-        position: absolute;
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        background-color: rgb(255, 255, 90);
-        box-sizing: border-box;
-        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-      }
-      
-      #star1 {
+      &:nth-of-type(1) {
         top: 0;
         left: 0;
       }
-      
-      #star2 {
+    
+      &:nth-of-type(2) {
         top: 120px;
         left: 120px;
       }
-      
-      #star3 {
+    
+      &:nth-of-type(3) {
         top: 240px;
         left: 240px;
       }
-      
-      #star4 {
+    
+      &:nth-of-type(4) {
         top: 360px;
         left: 360px;
       }
-      
-      #star5 {
+    
+      &:nth-of-type(5) {
         top: 480px;
         left: 480px;
       }
+    }
+    
       
       
 

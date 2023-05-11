@@ -1,43 +1,35 @@
 #section-2{
-    background-color: var(--charcoal);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../img/image.jpg");
-    background-size: cover;
+  background-color: var(--charcoal);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/image.jpg");
+  background-size: cover;
+  overflow: hidden; // Hide overflow of the circles
 
-    .circle {
-        position: relative;
-        display: inline-block;
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-      }
-      
-      .circle {
-        position: relative;
-        display: inline-block;
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-      }
-      
-      #pink {
-        background-color: rgb(255, 40, 165);
-        left: 20px;
-      }
-      
-      #aqua {
-        background-color: aqua;
-        left: -15px;
-      }
-      
-      #purple {
-        background-color: rgb(95, 0, 168);
-        left: 60px;
-      }
-      
-      
-      
+  .circle {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: all 0.5s ease-out; // Add transition for the circle size change
+  }
+
+  #pink {
+    background-color: rgb(255, 40, 165);
+    left: 20px;
+  }
+
+  #aqua {
+    background-color: aqua;
+    left: -15px;
+  }
+
+  #purple {
+    background-color: rgb(95, 0, 168);
+    left: 60px;
+  }
 }
+

@@ -379,12 +379,13 @@ textarea {
   background-image: url("../img/star.jpg");
   background-size: cover;
 }
-#section-1 #stars {
+#section-1 .stars {
   display: flex;
   flex-wrap: wrap;
   width: 500px;
   height: 500px;
   position: relative;
+  margin: 0 auto;
 }
 #section-1 .star {
   position: absolute;
@@ -395,23 +396,23 @@ textarea {
   box-sizing: border-box;
   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
-#section-1 #star1 {
+#section-1 .star:nth-of-type(1) {
   top: 0;
   left: 0;
 }
-#section-1 #star2 {
+#section-1 .star:nth-of-type(2) {
   top: 120px;
   left: 120px;
 }
-#section-1 #star3 {
+#section-1 .star:nth-of-type(3) {
   top: 240px;
   left: 240px;
 }
-#section-1 #star4 {
+#section-1 .star:nth-of-type(4) {
   top: 360px;
   left: 360px;
 }
-#section-1 #star5 {
+#section-1 .star:nth-of-type(5) {
   top: 480px;
   left: 480px;
 }
@@ -424,6 +425,7 @@ textarea {
   align-items: center;
   background-image: url("../img/image.jpg");
   background-size: cover;
+  overflow: hidden;
 }
 #section-2 .circle {
   position: relative;
@@ -431,13 +433,7 @@ textarea {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-}
-#section-2 .circle {
-  position: relative;
-  display: inline-block;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  transition: all 0.5s ease-out;
 }
 #section-2 #pink {
   background-color: rgb(255, 40, 165);
@@ -495,25 +491,31 @@ textarea {
   background-color: inherit;
   clip-path: polygon(25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%);
 }
-#section-3 #octagon1::before {
+
+#octagon1::before {
   left: 0;
 }
-#section-3 #octagon1::after {
+
+#octagon1::after {
   right: 0;
 }
-#section-3 #octagon2::before {
+
+#octagon2::before {
   top: 0;
   left: 0;
 }
-#section-3 #octagon2::after {
+
+#octagon2::after {
   bottom: 0;
   right: 0;
 }
-#section-3 #octagon3::before {
+
+#octagon3::before {
   top: 0;
   right: 0;
 }
-#section-3 #octagon3::after {
+
+#octagon3::after {
   bottom: 0;
   left: 0;
 }
