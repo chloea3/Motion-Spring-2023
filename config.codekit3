@@ -68,11 +68,11 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/design\/found-logo (1).svg" : {
+    "\/design\/custom logo (1).svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/design\/found-logo (1).svg",
+      "oAP" : "\/design\/custom logo (1).svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -312,14 +312,6 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
-    },
-    "\/Motion-Spring-2023-custom-logo-animation.zip" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/Motion-Spring-2023-custom-logo-animation.zip",
-      "oF" : 0
     },
     "\/node_modules" : {
       "ft" : 65536,
