@@ -13,15 +13,15 @@ const whiteCirclePaths = gsap.utils.toArray("#white-circle-1, #white-circle-2, #
 
 gsap.from(orangeCirclePath, {
   opacity: 0,
-  duration: 3,
+  duration: 4,
   ease: "power2.out"
 });
 
 gsap.from(pinkCirclePath, {
   opacity: 0,
-  duration: 3,
+  duration: 4,
   ease: "power2.out",
-  delay: 1
+  delay: 1.5
 });
 
 whiteCirclePaths.forEach((circlePath, index) => {
@@ -30,7 +30,7 @@ whiteCirclePaths.forEach((circlePath, index) => {
     opacity: 0,
     duration: 1,
     ease: "power2.out",
-    delay: 2 + (index * 0.3)
+    delay: 2.3 + (index * 0.3)
   });
 });
 
